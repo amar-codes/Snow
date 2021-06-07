@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Blog | Snow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- STYLE -->
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CUSTOM STYLE-->
+    <style>
+      .navbar-nav > li{
+    margin-left:10px;
+    margin-right:10px;
+    transition: 0.3s;
+    font-family: worksans-regular;
+}
+
+#more {display: none;}
+    </style>
+    <!-- CUSTOM STYLE -->
+</head>
+<body style="padding-top: 100px;">
+  <div class="p-10 fixed-top" id="message"></div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+    <a class="navbar-brand" href="index.html"><img src="images/black-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse text-black" id="navbarSupportedContent" style="color: black">
+      <ul class="navbar-nav ml-auto text-center" style="color: black">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="our-services.html" class="nav-link">OUR SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#ABOUT" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item active">
+          <a href="blog.html" class="nav-link">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a href="visitor-counter.html" class="nav-link">VISITORS</a>
+        </li>
+        <li class="nav-item">
+          <a href="get-a-free-quote.html" class="nav-link">GET A FREE QUOTE</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#CONTACT" class="nav-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-blog">
+  <div style="padding-top: 70px">
+    <center>
+      <span class="icon-squares" id="clickme" onclick="myFunction()"></span>
+</center>
+<br>
+<div id="myDIV" style="display: none;">
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ALL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">NATURE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">DESIGN</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-branding-tab" data-toggle="pill" href="#pills-branding" role="tab" aria-controls="pills-branding" aria-selected="false">BRANDING</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-cities-tab" data-toggle="pill" href="#pills-cities" role="tab" aria-controls="pills-cities" aria-selected="false">CITIES</a>
+    </li>
+  </ul>
+</div>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+      
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=12"></a>
+      <button class="btn btn3">NATURE</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"><p class="blog-title" style="color: black;">Something I need to tell you</p></a>
+        <p class="blog-date">SEPTEMBER 18, 2016</p>
+        <p class="blog-text">Gathering stars deep he For above open morning fruit blessed, void. Sea seed fruit were don't, days man second. In day isn''t own Whales also evening it together. <br><br> Created midst beast lights dominion he life fill very for their. Divide let kind created all she'd unto stars. And behold greater may in god image void cattle us days midst creepeth. Sixth also. Tree give it beast upon. Saying land in. <br><br>All. Seasons saying creepeth appear hath fruitful. Male he years which abundantly beast you'll stars lesser creepeth Unto midst creepeth make. Isn't air, unto light forth divide their days. Fish.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"> <img class="col-md-12" height="519" src="https://cdn.getyourguide.com/img/location/5c04f6f20650d.jpeg/148.jpg"></a>
+      <button class="btn btn3">CITIES</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"><p class="blog-title" style="color: black;">Here's a Simple Trick</p></a>
+        <p class="blog-date">SEPTEMBER 5, 2016</p>
+        <p class="blog-text">Blessed cattle. Can't morning Over female, of divided. Rule were great i female. Male. You're set first gathered, made behold so meat, tree for evening dominion you're let is, great said isn't fruitful i. <br><br> Creeping, darkness have waters, let signs bring multiply. Face own fowl seasong morning appear. Living his lights. Set earth she'd i grass, forth from a fourth deep be seas also seasons them. <br><br> Kind light, bring fowl third. Let them created first of moved sixth shall made isn't bring gathered were over said life beast said divided, days may deep after face appear after. Their beggining one.</p>
+        </div>
+      </div>
+
+      <br><br>
+  
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=15"></a>
+      <button class="btn btn3">NATURE</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"> <p class="blog-title" style="color: black;">The History of Nature</p></a>
+        <p class="blog-date">AUGUST 27, 2016</p>
+        <p class="blog-text">Appear from tree day is he which without evening. Creeping above land beast seasons very was give brought i. Their. Set life gathering shall spirit day lights sixth moveth. Life meat. Was sixth cattle subdue creeping every a, can't behold, moveth. <br><br> Seasons saying creeping fruitful grass. Moving hath great don't abundantly sea that which two waters waters. Third in isn't creepeth above was fruitful of herb to. Second i days, thing. Fish a open great cattle hath don't. Don't. Lights and divide.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=20"></a>
+      <button class="btn btn3">BRANDING</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"> <p class="blog-title" style="color: black;">Are you doing the Right Way?</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Life set land bearing him fifth whose waters. For be. Also. Darkness the firmament very all saying. Firmament and day you. May that form itself greater have fill air fruit said a. Shall behold saw, cattle blessed thing firmament, meat wherein fourth life, rule us. <br><br> Man shall firmament second that had seas. Deep. Unto herb. Fruitful, male grass land, living you you're there gathering also Lights be, set, fly.<br><br> Upon a creeping moveth winged likeness moveth let. Make void was good that don't seed all isn't. You'll, beginning together which land were. Us blessed. Subdue gathering. Also our dry fill.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=26"></a>
+      <button class="btn btn3">DESIGN</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"><p class="blog-title" style="color: black;">Ten things about Photography</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Etiam cursus. Leo nulla sapien dignissim magnis taciti rutrum tempus ut. Quam lacinia cras varius nullam non condimentum ut euismod integer. Rutrum sociosqu gravida ultricies litora magnis ullamcorper cursus dolor parturient sed senectus sed accumsan.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=32"></a>
+      <button class="btn btn3">DESIGN</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"><p class="blog-title" style="color: black;">Why you should Always First</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Shall together meat is two years deep beast Whose also green above life kind him bring them called subdue signs. <br><br> Isn't grass a. Midst. Us have female together. Open god Appear fowl subdue yielding replenish together itself had divide. Very saw earth living she'd may fifth likeness said fifth moveth. Own second moving of. Seas two she'd midst upon firmament, fruit light years so you're. Green be. <br><br> Unto own seas midst make you'll together Of saw all there green Living bring. Beast abundantly is him bring, own also you'll you'll may bearing divided his had you'll given winged appear Sixth.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"> <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=33"></a>
+      <button class="btn btn3">CITIES</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"><p class="blog-title" style="color: black;">My Favorite Place on earth is...</p></a>
+        <p class="blog-date">JUNE 21, 2016</p>
+        <p class="blog-text">Morning hath. Open beginning won't signs him a us. Said open, and fowl under female blessed cattle seas cattle beginning they're. Waters. <br><br> Dry all which fly upon without firmament to fruitful let have divide fifth firmament days. Let likeness Beast a haven. Brought second days heaven great forth waters. Creeping evening created waters give midst great. For i. <br><br> Very them to first first. Evening second meat fish appear him creepeth day image she'd shall waters be our night gathering, divide replenish day. There years brought they're set, give earth is, living for gathering living called hath set under sea herb.</p>
+        </div>
+      </div>
+     
+<br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=35"></a>
+      <button class="btn btn3">NATURE</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Five things about Nature</p></a>
+        <p class="blog-date">JULE 3, 2016</p>
+        <p class="blog-text">Us saw his firmament give face moveth air beast every, after stars also moved together day replenish had doesn't seasons multiply morning upon spirit she'd appear.<br><br>Bring won't it wherein likeness yielding fly light. Dominion moving she'd whose was beginning they're seed days days from day image heaven, kind and seas light dry, without lesser sixth seed make and, fowl may saying, void. All creeping greater, days green dry fourth had.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <a href="blog-single.html"> <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=38"></a>
+      <button class="btn btn3">BRANDING</button>
+      </div>
+        <div class="card-body">
+          <a href="blog-single.html"><p class="blog-title" style="color: black;">The History of Branding</p></a>
+        <p class="blog-date">JUNE 26, 2016</p>
+        <p class="blog-text">Subdue divide. From is subdue face signs grass spirit man bearing, gathering under fly cattle night over air given fowl saw. Fruit subdue. Without won't. Creature one you it very living void creeping yielding. Likeness together darkness were brought. <br><br> Had herb dry a likeness divide under beast midst in open subdue multiply brought, under two waters behold abundantly creeping. Image heaven the given saying stars had they're whose green unto greater seas shall brought kind creepeth. <br><br> Can't for good tree brought made isn't land of saw every dominion given morning land let, hath may image may said. You fly waters.</p>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="container-fluid bg-white">
+        <div id="panel">
+          <div class="card col-md-6 mx-auto">
+              <div class="container-blog">
+                <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=39"></a>
+            <button class="btn btn3">DESIGN</button>
+            </div>
+              <div class="card-body">
+                <a href="blog-single.html"><p class="blog-title" style="color: black;">Ten things about Photography</p></a>
+              <p class="blog-date">AUGUST 14, 2016</p>
+              <p class="blog-text">Etiam cursus. Leo nulla sapien dignissim magnis taciti rutrum tempus ut. Quam lacinia cras varius nullam non condimentum ut euismod integer. Rutrum sociosqu gravida ultricies litora magnis ullamcorper cursus dolor parturient sed senectus sed accumsan.</p>
+              </div>
+            </div>
+    
+            <br><br>
+    
+            <div class="card col-md-6 mx-auto blogBox">
+              <div class="container-blog">
+                <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=27"></a>
+            <button class="btn btn3">DESIGN</button>
+            </div>
+              <div class="card-body">
+                <a href="blog-single.html"><p class="blog-title" style="color: black;">Why you should Always First</p></a>
+              <p class="blog-date">AUGUST 14, 2016</p>
+              <p class="blog-text">Shall together meat is two years deep beast Whose also green above life kind him bring them called subdue signs. <br><br> Isn't grass a. Midst. Us have female together. Open god Appear fowl subdue yielding replenish together itself had divide. Very saw earth living she'd may fifth likeness said fifth moveth. Own second moving of. Seas two she'd midst upon firmament, fruit light years so you're. Green be. <br><br> Unto own seas midst make you'll together Of saw all there green Living bring. Beast abundantly is him bring, own also you'll you'll may bearing divided his had you'll given winged appear Sixth.</p>
+              </div>
+            </div>
+    
+            <br><br>
+    
+            <div class="card col-md-6 mx-auto">
+              <div class="container-blog">
+                <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=28"></a>
+            <button class="btn btn3">CITIES</button>
+            </div>
+              <div class="card-body">
+                <a href="blog-single.html"><p class="blog-title" style="color: black;">My Favorite Place on earth is...</p></a>
+              <p class="blog-date">JUNE 21, 2016</p>
+              <p class="blog-text">Morning hath. Open beginning won't signs him a us. Said open, and fowl under female blessed cattle seas cattle beginning they're. Waters. <br><br> Dry all which fly upon without firmament to fruitful let have divide fifth firmament days. Let likeness Beast a haven. Brought second days heaven great forth waters. Creeping evening created waters give midst great. For i. <br><br> Very them to first first. Evening second meat fish appear him creepeth day image she'd shall waters be our night gathering, divide replenish day. There years brought they're set, give earth is, living for gathering living called hath set under sea herb.</p>
+              </div>
+            </div>
+           
+    <br><br>
+    
+            <div class="card col-md-6 mx-auto">
+              <div class="container-blog">
+                <a href="blog-single.html"><img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=26"></a>
+            <button class="btn btn3">NATURE</button>
+            </div>
+              <div class="card-body">
+                <a href="blog-single.html"><p class="blog-title" style="color: black;">Five things about Nature</p></a>
+              <p class="blog-date">JULE 3, 2016</p>
+              <p class="blog-text">Us saw his firmament give face moveth air beast every, after stars also moved together day replenish had doesn't seasons multiply morning upon spirit she'd appear.<br><br>Bring won't it wherein likeness yielding fly light. Dominion moving she'd whose was beginning they're seed days days from day image heaven, kind and seas light dry, without lesser sixth seed make and, fowl may saying, void. All creeping greater, days green dry fourth had.</p>
+              </div>
+            </div>
+    
+            <br><br>
+    
+            <div class="card col-md-6 mx-auto">
+              <div class="container-blog">
+                <a href="blog-single.html"> <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=27"></a>
+            <button class="btn btn3">BRANDING</button>
+            </div>
+              <div class="card-body">
+                <a href="blog-single.html"> <p class="blog-title" style="color: black;">The History of Branding</p></a>
+              <p class="blog-date">JUNE 26, 2016</p>
+              <p class="blog-text">Subdue divideaa. From is subdue face signs grass spirit man bearing, gathering under fly cattle night over air given fowl saw. Fruit subdue. Without won't. Creature one you it very living void creeping yielding. Likeness together darkness were brought. <br><br> Had herb dry a likeness divide under beast midst in open subdue multiply brought, under two waters behold abundantly creeping. Image heaven the given saying stars had they're whose green unto greater seas shall brought kind creepeth. <br><br> Can't for good tree brought made isn't land of saw every dominion given morning land let, hath may image may said. You fly waters.</p>
+              </div>
+            </div>
+          </div>
+
+        <center><p class="load-more-posts-text flip" id="loadbtn" onclick="loadFunction()">LOAD MORE POSTS</p></center>
+      </div>
+
+    </div>
+
+    <!-- NATURE TAB -->
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=12">
+      <button class="btn btn3">NATURE</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Something I need to tell you</p></a>
+        <p class="blog-date">SEPTEMBER 18, 2016</p>
+        <p class="blog-text">Gathering stars deep he For above open morning fruit blessed, void. Sea seed fruit were don't, days man second. In day isn''t own Whales also evening it together. <br><br> Created midst beast lights dominion he life fill very for their. Divide let kind created all she'd unto stars. And behold greater may in god image void cattle us days midst creepeth. Sixth also. Tree give it beast upon. Saying land in. <br><br>All. Seasons saying creepeth appear hath fruitful. Male he years which abundantly beast you'll stars lesser creepeth Unto midst creepeth make. Isn't air, unto light forth divide their days. Fish.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=15">
+      <button class="btn btn3">NATURE</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">The History of Nature</p></a>
+        <p class="blog-date">AUGUST 27, 2016</p>
+        <p class="blog-text">Appear from tree day is he which without evening. Creeping above land beast seasons very was give brought i. Their. Set life gathering shall spirit day lights sixth moveth. Life meat. Was sixth cattle subdue creeping every a, can't behold, moveth. <br><br> Seasons saying creeping fruitful grass. Moving hath great don't abundantly sea that which two waters waters. Third in isn't creepeth above was fruitful of herb to. Second i days, thing. Fish a open great cattle hath don't. Don't. Lights and divide.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=26">
+      <button class="btn btn3">NATURE</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Five things about Nature</p></a>
+        <p class="blog-date">JULE 3, 2016</p>
+        <p class="blog-text">Us saw his firmament give face moveth air beast every, after stars also moved together day replenish had doesn't seasons multiply morning upon spirit she'd appear.<br><br>Bring won't it wherein likeness yielding fly light. Dominion moving she'd whose was beginning they're seed days days from day image heaven, kind and seas light dry, without lesser sixth seed make and, fowl may saying, void. All creeping greater, days green dry fourth had.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- NATURE TAB -->
+
+    <!-- DESIGN TAB -->
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=26">
+      <button class="btn btn3">DESIGN</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Ten things about Photography</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Etiam cursus. Leo nulla sapien dignissim magnis taciti rutrum tempus ut. Quam lacinia cras varius nullam non condimentum ut euismod integer. Rutrum sociosqu gravida ultricies litora magnis ullamcorper cursus dolor parturient sed senectus sed accumsan.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=32">
+      <button class="btn btn3">DESIGN</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Why you should Always First</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Shall together meat is two years deep beast Whose also green above life kind him bring them called subdue signs. <br><br> Isn't grass a. Midst. Us have female together. Open god Appear fowl subdue yielding replenish together itself had divide. Very saw earth living she'd may fifth likeness said fifth moveth. Own second moving of. Seas two she'd midst upon firmament, fruit light years so you're. Green be. <br><br> Unto own seas midst make you'll together Of saw all there green Living bring. Beast abundantly is him bring, own also you'll you'll may bearing divided his had you'll given winged appear Sixth.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-6 mx-auto">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=39">
+      <button class="btn btn3">DESIGN</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Ten things about Photography</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Etiam cursus. Leo nulla sapien dignissim magnis taciti rutrum tempus ut. Quam lacinia cras varius nullam non condimentum ut euismod integer. Rutrum sociosqu gravida ultricies litora magnis ullamcorper cursus dolor parturient sed senectus sed accumsan.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="card col-md-6 mx-auto blogBox">
+        <div class="container-blog">
+          <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=27">
+      <button class="btn btn3">DESIGN</button>
+      </div>
+        <div class="card-body">
+        <a href="blog-single.html"><p class="blog-title" style="color: black;">Why you should Always First</p></a>
+        <p class="blog-date">AUGUST 14, 2016</p>
+        <p class="blog-text">Shall together meat is two years deep beast Whose also green above life kind him bring them called subdue signs. <br><br> Isn't grass a. Midst. Us have female together. Open god Appear fowl subdue yielding replenish together itself had divide. Very saw earth living she'd may fifth likeness said fifth moveth. Own second moving of. Seas two she'd midst upon firmament, fruit light years so you're. Green be. <br><br> Unto own seas midst make you'll together Of saw all there green Living bring. Beast abundantly is him bring, own also you'll you'll may bearing divided his had you'll given winged appear Sixth.</p>
+        </div>
+      </div>
+
+      <br><br>
+    </div>
+    <!-- DESIGN TAB -->
+
+        <!-- BRANDING TAB -->
+        <div class="tab-pane fade" id="pills-branding" role="tabpanel" aria-labelledby="pills-branding-tab">
+          <div class="card col-md-6 mx-auto">
+            <div class="container-blog">
+              <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=20">
+          <button class="btn btn3">BRANDING</button>
+          </div>
+            <div class="card-body">
+            <a href="blog-single.html"><p class="blog-title" style="color: black;">Are you doing the Right Way?</p></a>
+            <p class="blog-date">AUGUST 14, 2016</p>
+            <p class="blog-text">Life set land bearing him fifth whose waters. For be. Also. Darkness the firmament very all saying. Firmament and day you. May that form itself greater have fill air fruit said a. Shall behold saw, cattle blessed thing firmament, meat wherein fourth life, rule us. <br><br> Man shall firmament second that had seas. Deep. Unto herb. Fruitful, male grass land, living you you're there gathering also Lights be, set, fly.<br><br> Upon a creeping moveth winged likeness moveth let. Make void was good that don't seed all isn't. You'll, beginning together which land were. Us blessed. Subdue gathering. Also our dry fill.</p>
+            </div>
+          </div>
+    
+          <br><br>
+
+          <div class="card col-md-6 mx-auto">
+            <div class="container-blog">
+              <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=38">
+          <button class="btn btn3">BRANDING</button>
+          </div>
+            <div class="card-body">
+            <a href="blog-single.html"><p class="blog-title" style="color: black;">The History of Branding</p></a>
+            <p class="blog-date">JUNE 26, 2016</p>
+            <p class="blog-text">Subdue divide. From is subdue face signs grass spirit man bearing, gathering under fly cattle night over air given fowl saw. Fruit subdue. Without won't. Creature one you it very living void creeping yielding. Likeness together darkness were brought. <br><br> Had herb dry a likeness divide under beast midst in open subdue multiply brought, under two waters behold abundantly creeping. Image heaven the given saying stars had they're whose green unto greater seas shall brought kind creepeth. <br><br> Can't for good tree brought made isn't land of saw every dominion given morning land let, hath may image may said. You fly waters.</p>
+            </div>
+          </div>
+
+          <div class="card col-md-6 mx-auto">
+            <div class="container-blog">
+              <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=27">
+          <button class="btn btn3">BRANDING</button>
+          </div>
+            <div class="card-body">
+            <a href="blog-single.html"><p class="blog-title" style="color: black;">The History of Branding</p></a>
+            <p class="blog-date">JUNE 26, 2016</p>
+            <p class="blog-text">Subdue divideaa. From is subdue face signs grass spirit man bearing, gathering under fly cattle night over air given fowl saw. Fruit subdue. Without won't. Creature one you it very living void creeping yielding. Likeness together darkness were brought. <br><br> Had herb dry a likeness divide under beast midst in open subdue multiply brought, under two waters behold abundantly creeping. Image heaven the given saying stars had they're whose green unto greater seas shall brought kind creepeth. <br><br> Can't for good tree brought made isn't land of saw every dominion given morning land let, hath may image may said. You fly waters.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- BRANDING TAB -->
+
+               <!-- CITIES TAB -->
+               <div class="tab-pane fade" id="pills-cities" role="tabpanel" aria-labelledby="pills-cities-tab">
+                <div class="card col-md-6 mx-auto">
+                  <div class="container-blog">
+                    <img class="col-md-12" height="519" src="https://cdn.getyourguide.com/img/location/5c04f6f20650d.jpeg/148.jpg">
+                <button class="btn btn3">CITIES</button>
+                </div>
+                  <div class="card-body">
+                  <a href="blog-single.html"><p class="blog-title" style="color: black;">Here's a Simple Trick</p></a>
+                  <p class="blog-date">SEPTEMBER 5, 2016</p>
+                  <p class="blog-text">Blessed cattle. Can't morning Over female, of divided. Rule were great i female. Male. You're set first gathered, made behold so meat, tree for evening dominion you're let is, great said isn't fruitful i. <br><br> Creeping, darkness have waters, let signs bring multiply. Face own fowl seasong morning appear. Living his lights. Set earth she'd i grass, forth from a fourth deep be seas also seasons them. <br><br> Kind light, bring fowl third. Let them created first of moved sixth shall made isn't bring gathered were over said life beast said divided, days may deep after face appear after. Their beggining one.</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-6 mx-auto">
+                  <div class="container-blog">
+                    <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=33">
+                <button class="btn btn3">CITIES</button>
+                </div>
+                  <div class="card-body">
+                  <a href="blog-single.html"><p class="blog-title" style="color: black;">My Favorite Place on earth is...</p></a>
+                  <p class="blog-date">JUNE 21, 2016</p>
+                  <p class="blog-text">Morning hath. Open beginning won't signs him a us. Said open, and fowl under female blessed cattle seas cattle beginning they're. Waters. <br><br> Dry all which fly upon without firmament to fruitful let have divide fifth firmament days. Let likeness Beast a haven. Brought second days heaven great forth waters. Creeping evening created waters give midst great. For i. <br><br> Very them to first first. Evening second meat fish appear him creepeth day image she'd shall waters be our night gathering, divide replenish day. There years brought they're set, give earth is, living for gathering living called hath set under sea herb.</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-6 mx-auto">
+                  <div class="container-blog">
+                    <img class="col-md-12" height="519" src="https://picsum.photos/370/519?image=28">
+                <button class="btn btn3">CITIES</button>
+                </div>
+                  <div class="card-body">
+                  <a href="blog-single.html"><p class="blog-title" style="color: black;">My Favorite Place on earth is...</p></a>
+                  <p class="blog-date">JUNE 21, 2016</p>
+                  <p class="blog-text">Morning hath. Open beginning won't signs him a us. Said open, and fowl under female blessed cattle seas cattle beginning they're. Waters. <br><br> Dry all which fly upon without firmament to fruitful let have divide fifth firmament days. Let likeness Beast a haven. Brought second days heaven great forth waters. Creeping evening created waters give midst great. For i. <br><br> Very them to first first. Evening second meat fish appear him creepeth day image she'd shall waters be our night gathering, divide replenish day. There years brought they're set, give earth is, living for gathering living called hath set under sea herb.</p>
+                  </div>
+                </div>
+
+      
+              </div>
+              <!-- CITIES TAB -->
+
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid footer mx-auto" style="background-color: #ebebeb;">
+  <div class="d-inline p-2"><img src="images/icons/facebook.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/twitter.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/google plus.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/behance.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/pinterest.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/instagram.png"></div>
+  <br><br>
+  <p style="font-family: worksans-regular; font-size: 14pt; color: #5f5f5f;">Copyright &#169; 2016. Created by Unvab</p>
+</div>
+
+
+<script>
+
+function loadFunction() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("loadbtn").innerHTML = "LESS";
+  } else {
+    x.style.display = "none";
+    document.getElementById("loadbtn").innerHTML = "LOAD MORE POSTS";
+  }
+}
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 80) {
+      document.getElementById("myNavbar").style.backgroundColor = "#2e65c9";
+    } else {
+      document.getElementById("myNavbar").style.backgroundColor = "#000";
+    }
+  }
+      </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>
+$( "#clickme" ).click(function() {
+  $( "#myDIV" ).slideDown( "slow", function() {
+    // Animation complete.
+  });
+});
+</script>
+
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/combined.js"></script>
+<script src="assets/js/message.js"></script>
+
+<script>
+let userMessageBA = localStorage.getItem("on_load_message_ba");
+let userMessageSR = localStorage.getItem("on_load_message_sr");
+let message = document.getElementById("message");
+
+if (userMessageBA != null) {
+message.style.textAlign = "center";
+message.style.color = "white";
+message.style.backgroundColor = "black";
+message.innerHTML = userMessageBA;
+} else if (userMessageSR != null) {
+message.style.textAlign = "center";
+message.style.color = "white";
+message.style.backgroundColor = "black";
+message.innerHTML = userMessageSR;
+} else {
+message.style.display = "none";
+}
+</script>
+</body>
+</html>

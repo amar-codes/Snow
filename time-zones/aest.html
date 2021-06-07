@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>AEST</title>
+</head>
+<body>
+    <p>AEST: Australia Eastern Time</p>
+                  
+      <script type="text/javascript" language="JavaScript" src="../js/anim-library.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../js/html5clocks.js"></script>
+            <script type="text/javascript" language="JavaScript" src="https://www.clocklink.com/clocks/HTML5/html5-024.js?2037"></script>
+            <script type="text/javascript" language="JavaScript">
+                function isCanvasSupported(){
+                    var elem = document.createElement("canvas");
+                    return !!(elem.getContext && elem.getContext("2d"));
+                }
+    if(isCanvasSupported()){
+var clock,animFrame;
+animFrame = new AnimFrame();
+clock = new Clock(
+new BaseClock(
+2020,
+9,
+30,
+7,
+28,
+51,
+0),
+"https://www.clocklink.com/clocks/HTML5/",
+"",
+"analog-clock.html",
+"https://www.clocklink.com/img/link/400_400.png",
+{
+clock : '024',
+timezone : 'AEST',
+color : 'white',
+size : '250',
+Title : '',
+Message : '',
+Target : '',
+From : '2020,1,1,0,0,0',
+Color : 'white'});
+animFrame.push(clock);
+animFrame.start();
+}
+            </script>
+</body>
+</html>

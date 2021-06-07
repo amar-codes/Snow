@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Single blog post | Snow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- STYLE -->
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CUSTOM STYLE-->
+    <style>
+      .navbar-nav > li{
+    margin-left:10px;
+    margin-right:10px;
+    transition: 0.3s;
+    font-family: worksans-regular;
+}
+
+#more {display: none;}
+    </style>
+    <!-- CUSTOM STYLE -->
+</head>
+<body>
+  <div class="p-10 fixed-top" id="message"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="images/black-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse text-black" id="navbarSupportedContent" style="color: black">
+      <ul class="navbar-nav ml-auto text-center" style="color: black">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item active">
+          <a href="our-services.html" class="nav-link">OUR SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#ABOUT" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a href="visitor-counter.html" class="nav-link">VISITORS</a>
+        </li>
+        <li class="nav-item">
+          <a href="get-a-free-quote.html" class="nav-link">GET A FREE QUOTE</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#CONTACT" class="nav-link">CONTACT</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-blog">
+    <div style="padding-top: 150px">
+      <center>
+        <span class="icon-squares" id="clickme" onclick="myFunction()"></span>
+  </center>
+  <br>
+  <div id="myDIV" style="display: none;">
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ALL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">BRANDING</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">PRINT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="branding-tab" data-toggle="tab" href="#branding" role="tab" aria-controls="branding" aria-selected="false">PHOTOGRAPHY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="cities-tab" data-toggle="tab" href="#cities" role="tab" aria-controls="cities" aria-selected="false">DESIGN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="mockup-tab" data-toggle="tab" href="#mockup" role="tab" aria-controls="mockup" aria-selected="false">MOCKUP</a>
+      </li>
+    </ul>
+  </div></div>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row">
+        <div class="column">
+          <a href="our-services-single-mockup.html">
+            <!-- DEMO 3 Item-->
+            <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+                <div class="hover hover-3 text-white"><img src="images/mockup.webp" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-3-content px-5 py-4">
+                    <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                    <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Vinyl Record</font><br><br> MOCKUP
+                    </p>
+                  </a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="column">
+           <!-- DEMO 3 Item-->
+           <a href="our-services-single-print.html">
+           <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/print.jpg" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Modern T-Shirt</font><br><br> PRINT
+                </p>
+              </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <div class="column">
+          <a href="our-services-single-branding.html">
+           <!-- DEMO 3 Item-->
+           <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/branding.webp" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Minimal Bag</font><br><br> BRANDING
+                </p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+            <!-- DEMO 3 Item-->
+            <a href="our-services-single-design.html">
+            <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+                <div class="hover hover-3 text-white"><img src="images/design.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-3-content px-5 py-4">
+                    <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                    <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Clean & Groovy</font><br><br> DESIGN
+                    </p>
+                  </a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="column">
+           <!-- DEMO 3 Item-->
+           <a href="our-services-single-design.html">
+           <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/design2.png" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Minimal Mobile App</font><br><br> DESIGN
+                </p>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <div class="column">
+           <!-- DEMO 3 Item-->
+           <a href="our-services-single-print.html">
+           <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/t-shirt-print.jpg" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">White T-Shirt</font><br><br> PRINT
+                </p>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+            <!-- DEMO 3 Item-->
+            <a href="our-services-single-branding.html">
+            <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+                <div class="hover hover-3 text-white"><img src="images/business-card.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-3-content px-5 py-4">
+                    <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                    <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Business Card</font><br><br> BRANDING
+                    </p>
+                  </div>
+                  </a>
+                </div>
+              </div>
+        </div>
+        <div class="column">
+           <!-- DEMO 3 Item-->
+           <a href="our-services-single-photography.html">
+           <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/photography.jpg" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Heja Stockholm</font><br><br> PHOTOGRAPHY
+                </p>
+              </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <div class="column">
+           <!-- DEMO 3 Item-->
+           <a href="our-services-single-photography.html">
+           <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/photography2.jpg" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Paper Bag</font><br><br> PHOTOGRAPHY
+                </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="bg-white">
+          <center><p class="load-more-posts-text flip" id="loadbtn" onclick="loadFunction()">LOAD MORE WORKS</p></center>
+          <div id="panel">
+          <div class="row">
+            <div class="column">
+              <!-- DEMO 3 Item-->
+              <a href="our-services-single-photography.html">
+              <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+               <div class="hover hover-3 text-white"><img src="images/photography3.jpg" alt="">
+                 <div class="hover-overlay"></div>
+                 <div class="hover-3-content px-5 py-4">
+                   <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                   <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Michael</font><br><br> PHOTOGRAPHY
+                   </p>
+                   </a>
+                 </div>
+               </div>
+             </div>
+       
+           </div>
+           <div class="column">
+              <!-- DEMO 3 Item-->
+              <a href="our-services-single-photography.html">
+              <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+               <div class="hover hover-3 text-white"><img src="images/photography4.jpg" alt="">
+                 <div class="hover-overlay"></div>
+                 <div class="hover-3-content px-5 py-4">
+                   <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                   <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Alex</font><br><br> PHOTOGRAPHY
+                   </p>
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="column">
+            <!-- DEMO 3 Item-->
+            <a href="our-services-single-photography.html">
+            <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+             <div class="hover hover-3 text-white"><img src="images/photography5.jpg" alt="">
+               <div class="hover-overlay"></div>
+               <div class="hover-3-content px-5 py-4">
+                 <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                 <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Donald</font><br><br> PHOTOGRAPHY
+                 </p>
+                 </a>
+               </div>
+             </div>
+           </div>
+         </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="row">
+        <div class="column">
+          <a href="our-services-single-branding.html">
+          <!-- DEMO 3 Item-->
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+           <div class="hover hover-3 text-white"><img src="images/branding.webp" alt="">
+             <div class="hover-overlay"></div>
+             <div class="hover-3-content px-5 py-4">
+               <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+               <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Minimal Bag</font><br><br> BRANDING
+               </p>
+             </div>
+             </a>
+           </div>
+         </div>
+       </div>
+
+       <div class="column">
+        <!-- DEMO 3 Item-->
+        <a href="our-services-single-branding.html">
+        <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/business-card.jpg" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Business Card</font><br><br> BRANDING
+                </p>
+              </div>
+              </a>
+            </div>
+          </div>
+    </div>
+   </div>
+
+      </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="row">
+        <a href="our-services-single-print.html">
+        <div class="column">
+          <!-- DEMO 3 Item-->
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+           <div class="hover hover-3 text-white"><img src="images/print.jpg" alt="">
+             <div class="hover-overlay"></div>
+             <div class="hover-3-content px-5 py-4">
+               <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+               <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Modern T-Shirt</font><br><br> PRINT
+               </p>
+              </a>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="column">
+        <!-- DEMO 3 Item-->
+        <a href="our-services-single-print.html">
+        <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+         <div class="hover hover-3 text-white"><img src="images/t-shirt-print.jpg" alt="">
+           <div class="hover-overlay"></div>
+           <div class="hover-3-content px-5 py-4">
+             <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+             <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">White T-Shirt</font><br><br> PRINT
+             </p>
+            </a>
+           </div>
+         </div>
+       </div>
+     </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+      <div class="row">
+        <div class="column">
+          <!-- DEMO 3 Item-->
+          <a href="our-services-single-photography.html">
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+           <div class="hover hover-3 text-white"><img src="images/photography.jpg" alt="">
+             <div class="hover-overlay"></div>
+             <div class="hover-3-content px-5 py-4">
+               <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+               <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Heja Stockholm</font><br><br> PHOTOGRAPHY
+               </p>
+               </a>
+             </div>
+           </div>
+         </div>
+   
+       </div>
+       <div class="column">
+          <!-- DEMO 3 Item-->
+          <a href="our-services-single-photography.html">
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+           <div class="hover hover-3 text-white"><img src="images/photography2.jpg" alt="">
+             <div class="hover-overlay"></div>
+             <div class="hover-3-content px-5 py-4">
+               <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+               <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Paper Bag</font><br><br> PHOTOGRAPHY
+               </p>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+
+        <div class="column">
+          <!-- DEMO 3 Item-->
+          <a href="our-services-single-photography.html">
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+           <div class="hover hover-3 text-white"><img src="images/photography3.jpg" alt="">
+             <div class="hover-overlay"></div>
+             <div class="hover-3-content px-5 py-4">
+               <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+               <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Michael</font><br><br> PHOTOGRAPHY
+               </p></a>
+             </div>
+           </div>
+         </div>
+   
+       </div>
+      </div>
+      <div class="row">
+       <div class="column">
+          <!-- DEMO 3 Item-->
+          <a href="our-services-single-photography.html">
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+           <div class="hover hover-3 text-white"><img src="images/photography4.jpg" alt="">
+             <div class="hover-overlay"></div>
+             <div class="hover-3-content px-5 py-4">
+               <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+               <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Alex</font><br><br> PHOTOGRAPHY
+               </p>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="column">
+        <!-- DEMO 3 Item-->
+        <a href="our-services-single-photography.html">
+        <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+         <div class="hover hover-3 text-white"><img src="images/photography5.jpg" alt="">
+           <div class="hover-overlay"></div>
+           <div class="hover-3-content px-5 py-4">
+             <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+             <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Donald</font><br><br> PHOTOGRAPHY
+             </p>
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+      </div>
+      </div>
+
+    <div class="tab-pane fade" id="cities" role="tabpanel" aria-labelledby="cities-tab">
+      <div class="row">
+        <div class="column">
+          <!-- DEMO 3 Item-->
+          <a href="our-services-single-design.html">
+          <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+              <div class="hover hover-3 text-white"><img src="images/design.jpg" alt="">
+                <div class="hover-overlay"></div>
+                <div class="hover-3-content px-5 py-4">
+                  <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                  <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Clean & Groovy</font><br><br> DESIGN
+                  </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="column">
+         <!-- DEMO 3 Item-->
+         <a href="our-services-single-design.html">
+         <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+          <div class="hover hover-3 text-white"><img src="images/design2.png" alt="">
+            <div class="hover-overlay"></div>
+            <div class="hover-3-content px-5 py-4">
+              <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+              <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Minimal Mobile App</font><br><br> DESIGN
+              </p>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="mockup" role="tabpanel" aria-labelledby="mockup-tab">
+      <div class="row">
+      <div class="column">
+        <!-- DEMO 3 Item-->
+        <a href="our-services-single-mockup.html">
+        <div class="col-lg-13 mb-9 mb-lg-0" data-aos="fade-right">
+            <div class="hover hover-3 text-white"><img src="images/mockup.webp" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></h3>
+                <p class="hover-3-description small text-uppercase mb-0"><font style="font-family: playfair-bold; font-size: 30pt;">Vinyl Record</font><br><br> MOCKUP
+                </p>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>
+  </div>
+
+ <!-- FOOTER -->
+<div class="container-fluid footer mx-auto" style="background-color: #ebebeb;">
+  <div class="d-inline p-2"><img src="images/icons/facebook.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/twitter.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/google plus.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/behance.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/pinterest.png"></div>
+  <div class="d-inline p-2"><img src="images/icons/instagram.png"></div>
+  <br><br>
+  <p style="font-family: worksans-regular; font-size: 14pt; color: #5f5f5f;">Copyright &#169; 2016. Created by nK</p>
+</div>
+
+<script>
+
+    function loadFunction() {
+      var x = document.getElementById("panel");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        document.getElementById("loadbtn").innerHTML = "LESS";
+      } else {
+        x.style.display = "none";
+        document.getElementById("loadbtn").innerHTML = "LOAD MORE WORKS";
+      }
+    }
+      </script>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 80) {
+          document.getElementById("myNavbar").style.backgroundColor = "#2e65c9";
+        } else {
+          document.getElementById("myNavbar").style.backgroundColor = "#000";
+        }
+      }
+          </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/combined.js"></script>
+<script src="assets/js/message.js"></script>
+
+<script>
+let userMessageBA = localStorage.getItem("on_load_message_ba");
+let userMessageSR = localStorage.getItem("on_load_message_sr");
+let message = document.getElementById("message");
+
+if (userMessageBA != null) {
+message.style.textAlign = "center";
+message.style.color = "white";
+message.style.backgroundColor = "black";
+message.innerHTML = userMessageBA;
+} else if (userMessageSR != null) {
+message.style.textAlign = "center";
+message.style.color = "white";
+message.style.backgroundColor = "black";
+message.innerHTML = userMessageSR;
+} else {
+message.style.display = "none";
+}
+</script>
+</body>
+</html>

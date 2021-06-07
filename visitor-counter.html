@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Snow | Visitors</title>
+
+    <meta
+      name="description"
+      content="Snow - Clean & Minimal Portfolio HTML template."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, clean, minimal, blog, template, portfolio website"
+    />
+
+            <!-- BOOTSTRAP -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+            <!-- BOOTSTRAP -->
+        
+            <!-- STYLE -->
+            <link rel="stylesheet" href="css/style.css" type="text/css">
+            <!-- STYLE -->
+        
+            <!-- GOOGLE FONT -->
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+            <!-- GOOGLE FONT -->
+        
+            <!-- FONT AWESOME -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="author" content="nK" />
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- START: Styles -->
+    <style>
+        #flag {
+    float: left;
+    width:  150px;
+    height: 90px;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.counter{
+    margin-top: 1.5rem;
+}
+
+.navbar{
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar{
+    margin-top: 100px;
+  }
+}
+    </style>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="assets/css/combined.css" />
+
+    <!-- END: Styles -->
+  </head>
+  
+  <body style="padding-top: 100px;">
+    <div class="p-10 fixed-top" id="message"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="images/black-logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse text-black" id="navbarSupportedContent" style="color: black">
+        <ul class="navbar-nav ml-auto text-center" style="color: black">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="our-services.html" class="nav-link">OUR SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#ABOUT" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">BLOG</a>
+          </li>
+          <li class="nav-item active">
+            <a href="visitor-counter.html" class="nav-link">VISITORS</a>
+          </li>
+          <li class="nav-item">
+            <a href="get-a-free-quote.html" class="nav-link">GET A FREE QUOTE</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#CONTACT" class="nav-link">CONTACT</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+  
+    
+    <div class="text-xs-center display-4" >
+        <span>All Visitors:</span>
+      <p id="counterAll">0</p>
+    </div>
+    
+    <div class="container text-xs-center">
+        <div class="row">
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/BIH_flag.jpg" alt="BIH flag">
+                <p class="counter" id="counterBA">0</p>
+            </div>
+            <div class="col-md-2 col-ld-2"></div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/SERBIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterRS">0</p>
+            </div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/CROATIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterHR">0</p>
+            </div>
+            <div class="col-md-2 col-ld-2"></div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/SLOVENIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterSL">0</p>
+            </div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/MONTENEGRO_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterME">0</p>
+            </div>
+            <div class="col-md-2 col-ld-2"></div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/ALBANIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterAL">0</p>
+            </div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/MACEDONIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterMK">0</p>
+            </div>
+            <div class="col-md-2 col-ld-2"></div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/BULGARIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterBG">0</p>
+            </div>
+            <div class=" display-4 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <img id="flag" class="img-thumbnail" src="assets/images/flags/ROMANIA_flag.jpg" alt="SERBIA flag">
+                <p class="counter" id="counterRO">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        START: Footer
+    -->
+    <footer class="nk-footer">
+        <div class="nk-footer-cont">
+            <div class="container text-xs-center">
+                <div class="nk-footer-social">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/unvabdesign/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="nk-footer-text">
+                    <p>2016 &copy; Design by Unvab. Code by nK</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+    </div>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/combined.js"></script>
+    <script src="assets/js/message.js"></script>
+    <script>
+
+      let counterNumber = localStorage.getItem("on_load_counter");
+      counterAll.innerHTML = parseInt(counterNumber);
+
+      let counterNumberBA = localStorage.getItem("on_load_counter_ba");
+      counterBA.innerHTML = parseInt(counterNumberBA);
+
+      let counterNumberRS = localStorage.getItem("on_load_counter_rs");
+      counterRS.innerHTML = parseInt(counterNumberRS);
+
+      let counterNumberHR = localStorage.getItem("on_load_counter_hr");
+      counterHR.innerHTML = parseInt(counterNumberHR);
+
+      let counterNumberSL = localStorage.getItem("on_load_counter_sl");
+      counterSL.innerHTML = parseInt(counterNumberSL);
+
+      let counterNumberME = localStorage.getItem("on_load_counter_me");
+      counterME.innerHTML = parseInt(counterNumberME);
+
+      let counterNumberAL = localStorage.getItem("on_load_counter_al");
+      counterAL.innerHTML = parseInt(counterNumberAL);
+
+      let counterNumberMK = localStorage.getItem("on_load_counter_mk");
+      counterMK.innerHTML = parseInt(counterNumberMK);
+
+      let counterNumberBG = localStorage.getItem("on_load_counter_bg");
+      counterBG.innerHTML = parseInt(counterNumberBG);
+
+      let counterNumberRO = localStorage.getItem("on_load_counter_ro");
+      counterRO.innerHTML = parseInt(counterNumberRO);
+
+      let userMessageBA = localStorage.getItem("on_load_message_ba");
+      let userMessageSR = localStorage.getItem("on_load_message_sr");
+
+      if (userMessageBA != null) {
+          message.style.textAlign = "center";
+          message.style.color = "white";
+          message.style.backgroundColor = "black";
+          message.innerHTML = userMessageBA;
+        } else if (userMessageSR != null) {
+          message.style.textAlign = "center";
+          message.style.color = "white";
+          message.style.backgroundColor = "black";
+          message.innerHTML = userMessageSR;
+        } else {
+          message.style.display = "none";
+        }
+
+    </script>
+
+    
+  </body>
+
+  
+</html>

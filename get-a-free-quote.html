@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Snow | Get a free quote</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- BOOTSTRAP -->
+    
+        <!-- STYLE -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- STYLE -->
+    
+        <!-- GOOGLE FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <!-- GOOGLE FONT -->
+</head>
+<body style="padding-top: 80px;">
+    <div class="p-10 fixed-top" id="message"></div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" id="myNavbar">
+        <a class="navbar-brand" href="index.html"><img src="images/black-logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse text-black" id="navbarSupportedContent" style="color: black">
+          <ul class="navbar-nav ml-auto text-center" style="color: black">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="our-services.html" class="nav-link">OUR SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#ABOUT" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a href="visitor-counter.html" class="nav-link">VISITORS</a>
+            </li>
+            <li class="nav-item active">
+              <a href="get-a-free-quote.html" class="nav-link">GET A FREE QUOTE</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#CONTACT" class="nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <iframe src="forms/get-a-free-quote/snow/1/form.html" width="100%" height="1300px"></iframe>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="assets/js/counter.js"></script>
+<script>
+let userMessageBA = localStorage.getItem("on_load_message_ba");
+let userMessageSR = localStorage.getItem("on_load_message_sr");
+
+if (userMessageBA != null) {
+message.style.textAlign = "center";
+message.style.color = "white";
+message.style.backgroundColor = "black";
+message.innerHTML = userMessageBA;
+} else if (userMessageSR != null) {
+message.style.textAlign = "center";
+message.style.color = "white";
+message.style.backgroundColor = "black";
+message.innerHTML = userMessageSR;
+} else {
+message.style.display = "none";
+}
+</script>
+</body>
+</html>
