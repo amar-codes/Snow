@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.20709" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.20709" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.20709" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.20709" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.setConditions([{"action":[{"id":"action_1581690116457","visibility":"Hide","isError":false,"field":"10"}],"id":"1581690133174","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1581690116457","field":"17","operator":"isEmpty","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_0_1581690045611","visibility":"Hide","isError":false,"field":"10"}],"id":"1581689801697","index":"1","link":"Any","priority":"1","terms":[{"id":"term_0_1581690045611","field":"17","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"field":"11","visibility":"Show","id":"action_1_1581689802691"}],"id":"1581689543679","index":"2","link":"Any","priority":"2","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"},{"action":[{"field":"18","visibility":"Show","id":"action_0_1581945983644","isError":false}],"id":"1581689543680","index":"3","link":"Any","priority":"3","terms":[{"field":"15","operator":"equals","value":"Yes","id":"term_0_1581945983644","isError":false}],"type":"field"},{"action":[{"field":"10","visibility":"Show","id":"action_3_1581689802691"}],"id":"1581689543681","index":"4","link":"Any","priority":"4","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"}]);
+	JotForm.init(function(){
+      productID = {"0":"input_19_1001","1":"input_19_1002","2":"input_19_1003","3":"input_19_1004","4":"input_19_1005","5":"input_19_1006","6":"input_19_1007","7":"input_19_1008"};
+      paymentType = "product";
+      JotForm.setCurrencyFormat('USD',true, 'point');
+      JotForm.totalCounter({"input_19_1001":{"price":"100"},"input_19_1002":{"price":"100"},"input_19_1003":{"price":"200"},"input_19_1004":{"price":"300"},"input_19_1005":{"price":"200"},"input_19_1006":{"price":"100"},"input_19_1007":{"price":"100"},"input_19_1008":{"price":"250"}});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
+      JotForm.handleProductLightbox();
+      setTimeout(function() {
+          $('input_3').hint('ex: myname@example.com');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_5_full', '(###) ###-####' );
+	JotForm.newDefaultTheme = true;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"clickTo","qid":"1","text":"Product Order Form","type":"control_head"},{"name":"name","qid":"2","text":"Name","type":"control_fullname"},{"name":"email3","qid":"3","subLabel":"","text":"E-mail","type":"control_email"},null,{"name":"contactNumber","qid":"5","text":"Contact Number","type":"control_phone"},null,null,null,null,null,null,null,{"name":"submit","qid":"13","text":"Submit Order","type":"control_button"},null,null,null,null,null,{"name":"options","qid":"19","text":"Options","type":"control_paypalcomplete"},{"name":"payWith","qid":"20","text":"Pay with PayPal","type":"control_paymentmethods"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Product Order Form","type":"control_head"},{"name":"name","qid":"2","text":"Name","type":"control_fullname"},{"name":"email3","qid":"3","subLabel":"","text":"E-mail","type":"control_email"},null,{"name":"contactNumber","qid":"5","text":"Contact Number","type":"control_phone"},null,null,null,null,null,null,null,{"name":"submit","qid":"13","text":"Submit Order","type":"control_button"},null,null,null,null,null,{"name":"options","qid":"19","text":"Options","type":"control_paypalcomplete"},{"name":"payWith","qid":"20","text":"Pay with PayPal","type":"control_paymentmethods"}]);}, 20); 
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5eb3b4ae85bd2e1e2966db96"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.20709" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.20709" />
+<form class="jotform-form" method="post" name="form_202764638927366" id="202764638927366" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="202764638927366" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line card-3col" data-type="control_paypalcomplete" id="id_19" data-payment="true">
+        <label class="form-label form-label-top" id="label_19" for="input_19"> Options </label>
+        <div id="cid_19" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true">
+              <div class="filter-container">
+              </div>
+              <input type="hidden" name="simple_fpc" data-payment_type="paypalcomplete" data-component="payment1" value="19" />
+              <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none">    <style>
+                .form-line-error{
+                    background-color: #fff;
+                }
+        
+                .form-error-message{
+                    display: none;
+                }
+            </style>
+                <img id="current-image" />
+                <span class="lb-prev-button">
+                  prev
+                </span>
+                <span class="lb-next-button">
+                  next
+                </span>
+                <span class="lb-close-button">
+                  ( X )
+                </span>
+                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                  </ul>
+                </span>
+              </div>
+              <div data-wrapper-react="true">
+                <span class="form-product-item hover-product-item on_col1 full_img new_ui" categories="non-categorized" pid="1001" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1001" name="q19_options[][id]" value="1001" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1001" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1001">
+                            Unique Template
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1001">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1001_price">
+                                100.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col2 full_img new_ui" categories="non-categorized" pid="1002" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1002" name="q19_options[][id]" value="1002" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1002" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1002">
+                            Static page
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1002">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1002_price">
+                                100.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col3 full_img new_ui" categories="non-categorized" pid="1003" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1003" name="q19_options[][id]" value="1003" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1003" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1003">
+                            Dynamic page
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1003">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1003_price">
+                                200.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col1 full_img new_ui" categories="non-categorized" pid="1004" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1004" name="q19_options[][id]" value="1004" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1004" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1004">
+                            Dynamic page shop
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1004">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1004_price">
+                                300.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col2 new_ui" categories="non-categorized" pid="1005" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1005" name="q19_options[][id]" value="1005" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1005" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1005">
+                            Additional feature: SEO
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1005">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1005_price">
+                                200.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col3 new_ui" categories="non-categorized" pid="1006" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1006" name="q19_options[][id]" value="1006" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1006" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1006">
+                            Additional feature: Facebook Advertising / per post
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1006">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1006_price">
+                                100.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col1 new_ui" categories="non-categorized" pid="1007" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1007" name="q19_options[][id]" value="1007" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1007" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1007">
+                            Additional Feature: Instagram Advertising / per post
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1007">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1007_price">
+                                100.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col2 full_img new_ui" categories="non-categorized" pid="1008" style="display:block">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1008" name="q19_options[][id]" value="1008" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area null" style="background-image:url(&quot;null&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1008" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1008">
+                            Google Ads / per campaign
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1008">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              $
+                              <span id="input_19_1008_price">
+                                250.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="payment_footer new_ui ">
+                  <div class="total_area">
+                    <div class="form-payment-total">
+                      <div id="total-text">
+                        Total
+                      </div>
+                      <div class="form-payment-price">
+                        <span data-wrapper-react="true">
+                          $
+                          <span id="payment_total">
+                            0.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_2">
+        <label class="form-label form-label-top" id="label_2" for="first_2"> Name </label>
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_2" name="q2_name[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_2 sublabel_2_first" />
+              <label class="form-sub-label" for="first_2" id="sublabel_2_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_2" name="q2_name[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_2 sublabel_2_last" />
+              <label class="form-sub-label" for="last_2" id="sublabel_2_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_3">
+        <label class="form-label form-label-top" id="label_3" for="input_3"> E-mail </label>
+        <div id="cid_3" class="form-input-wide" data-layout="half">
+          <input type="email" id="input_3" name="q3_email3" class="form-textbox validate[Email]" style="width:310px" size="310" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_3" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5_full"> Contact Number </label>
+        <div id="cid_5" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_5_full" name="q5_contactNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" />
+            <label class="form-sub-label is-empty" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false">  </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_13">
+        <div id="cid_13" class="form-input-wide" data-layout="full">
+          <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+           <a href="thanks.html">
+            <button id="input_13" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="" style="background-color: black; border-color: black; border-radius: 0px;">
+              Submit
+            </button>
+        </a>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="202764638927366" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='202764638927366'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "202764638927366-202764638927366";
+}
+  </script>
+</form>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.20709"></script>
+    
+</body>
+</html>
